@@ -1,7 +1,9 @@
 // TO DO
 window.addEventListener('DOMContentLoaded', function(){
-  document.querySelector('ul').childNodes.addEventListener('click',function(){
-    const li = document.querySelector('ul').childNodes
-      li.classList.toggle('checked')
-  })
+  let lists = document.querySelectorAll('li')
+  for (let i = 0; i < lists.length; i++){
+    lists[i].addEventListener('click', function(){
+      lists[i].classList.toggle('checked')
+    })
+  }
 })
