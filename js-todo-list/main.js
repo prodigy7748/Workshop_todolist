@@ -10,7 +10,11 @@ window.addEventListener('DOMContentLoaded', function(){
     span.textContent = ('x')
     span.classList.add('close')
     li.textContent = (input_value)
-    li.insertAdjacentElement('beforeEnd', span)
-    ul.insertAdjacentElement('beforeEnd', li)
+    if (input_value != ''){
+      li.insertAdjacentElement('beforeEnd', span)
+      ul.insertAdjacentElement('beforeEnd', li)
+    }else{
+      alert('輸入標題啊，混蛋!!!')
+    }
   })
 })
