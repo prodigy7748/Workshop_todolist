@@ -4,8 +4,4 @@ window.addEventListener('DOMContentLoaded', function(){
     const li = document.querySelector('ul li')
       li.classList.toggle('checked')
   })
-
-  document.querySelector('span').addEventListener('click', function(){
-    document.querySelector('span').remove()
-  })
 })
