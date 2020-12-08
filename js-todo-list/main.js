@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function(){
   const addBtn = document.querySelector('#addBtn')
   
   addBtn.addEventListener('click',function(){
-    const input_value = document.querySelector('#input').value
+    let input_value = document.querySelector('#input').value
     const li = document.createElement('li')
     const span = document.createElement('span')
     span.textContent = ('x')
@@ -16,5 +16,6 @@ window.addEventListener('DOMContentLoaded', function(){
     }else{
       alert('輸入標題啊，混蛋!!!')
     }
+    input_value = ''
   })
 })
